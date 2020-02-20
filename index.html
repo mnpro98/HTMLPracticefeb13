@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<link rel="stylesheet" type="text/css" href="./css/index.css"/>
+	<h2>
+		Welcome to our menu!
+	</h2>
 	<ul>
 		<li>
-			<a href = "https://www.msn.com/es-mx/?cobrand=acer17win10.msn.com&ocid=ACERDHP17&pc=ACTE" target = "blank">
+			<a href = "/index.html">
 				Home
 			</a>
 		</li>
 		<li>
-			<a href = "https://www.msn.com/es-mx/?cobrand=acer17win10.msn.com&ocid=ACERDHP17&pc=ACTE" target = "blank">
+			<a href = "/about.html">
 				About
 			</a>
 		</li>
 		<li>
-			<a href = "https://www.msn.com/es-mx/?cobrand=acer17win10.msn.com&ocid=ACERDHP17&pc=ACTE" target = "blank">
+			<a href = "/reviews.html">
 				Reviews
 			</a>
 		</li>
@@ -21,9 +25,6 @@
 	<p>
 		This is the sidebar!
 	</p>
-	<h1>
-		Welcome to our menu!
-	</h1>
 </head>
 <body>
 	<table>
@@ -114,35 +115,38 @@
 			<legend>
 				Leave us a comment
 			</legend>
+
+			<span> We won't share this information. </span>
+
 			<div>
 				<label for = "firstname">
 					First name:
 				</label>
-				<input type = "text" value="test" id="firstname" class="test" name="user" />
+				<input type = "text" value="test" id="firstname" class="formElement" name="user" />
 			</div>
 			<div>
 				<label for = "lastname">
 					Last name:
 				</label>
-				<input type="text" />
+				<input type="text" id = "lastname" class="formElement" />
 			</div>
 			<div>
 				<label for = "email">
 					Email:
 				</label>
-				<input type="text" />
+				<input type="email" id = "email" class="formElement" />
 			</div>
 			<div>
 				<label for = "phonenumber">
 					Phone number:
 				</label>
-				<input type="text" />
+				<input type="text" id = "phone" class="formElement" />
 			</div>
 			<div>
 				<label for="rate">
 					Rate us:
 				</label>
-				<select name="rate">
+				<select name="rate" class="formElement">
 					<option value="VG">
 						Very good
 					</option>
@@ -155,7 +159,7 @@
 				Your comment:
 			</div>
 			<div>
-				<textarea>
+				<textarea class="formElement">
 			
 				</textarea>
 			</div>
@@ -166,16 +170,16 @@
 				<label for = "gender-male">
 					Yes:
 				</label>
-				<input type="radio" value="m" name="gender" id = "gender-male" />
+				<input type="radio" value="m" name="gender" id = "gender-male" class="formElement" />
 			</div>
 			<div>
 				<label for = "gender-female">
 					No:
 				</label>
-				<input type="radio" value="f" name="gender" id = "gender-female" />
+				<input type="radio" value="f" name="gender" id = "gender-female" class="formElement" />
 			</div>
 			<div>
-				<input type="submit" value="Submit" />
+				<input type="submit" value="Submit" id = "submitButton" class="clickable" />
 			</div>
 		</fieldset>
 	</form>
